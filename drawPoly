@@ -1,0 +1,17 @@
+import turtle
+
+#Id the function with it's parameters
+
+def drawPoly(tess, ns, sz):
+    for i in range(8):
+        tess.forward(sz)
+        tess.left(360 / ns)
+
+tess = turtle.Turtle()
+wn = turtle.Screen()
+wn.bgcolor("lightgreen")
+tess.fillcolor("red")
+
+drawPoly(tess, 8, 50)
+
+wn.exitonclick()
